@@ -16,3 +16,9 @@ Organization	: Ministry of AYUSH
 Category :	Software
 <br>
 Domain Bucket	: MedTech / BioTech / HealthTech
+# Team Members
+1) Atharva Deopujari <br>
+2) Kirtan Bhavsar <br>
+3) Vansh Bhavsar <br>
+4) Vipin Mishra <br>
+5) Dikshita Sakhare <br>
