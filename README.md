@@ -22,4 +22,4 @@ Domain Bucket	: MedTech / BioTech / HealthTech
 2) Kirtan Bhavsar <br>
 3) Vansh Bhavsar <br>
 4) Vipin Mishra <br>
-5) Akshaya <br>
+5) Akshaya Siri Mudragada<br>

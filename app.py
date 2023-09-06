@@ -5,6 +5,7 @@ import sys
 import os
 
 os.environ["OPENAI_API_KEY"] = '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'
+#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
 
 def construct_index(directory_path):
     max_input_size = 4096
@@ -30,9 +31,9 @@ def chatbot(input_text):
     return response.response
 
 iface = gr.Interface(fn=chatbot,
-                     inputs=gr.components.Textbox(lines=7, label="Enter your text"),
+                     inputs=gr.components.Textbox(lines=7, label="Enter your question"),
                      outputs="text",
-                     title="Custom-trained AI Chatbot")
+                     title="Ayush 2.0")
 
 index = construct_index("docs")
 iface.launch(share=True)
