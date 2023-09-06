@@ -22,4 +22,26 @@ Domain Bucket	: MedTech / BioTech / HealthTech
 2) Kirtan Bhavsar <br>
 3) Vansh Bhavsar <br>
 4) Vipin Mishra <br>
-5) Akshaya Siri Mudragada<br>
+5) Akshaya Mudragada<br>
+
+# Installation
+Run the following commands in command prompt to install the required python libraries
+<ol>
+  <li><code>python --version</code></li>
+  <li><code>pip --version</code></li>
+  <li><code>python -m pip install -U pip</code></li>
+   <li><code>pip install openai</code></li>
+   <li><code>pip install gpt_index==0.4.24</code></li>
+   <li><code>pip install langchain==0.0.148</code></li>
+  <li><code>pip install PyPDF2</code></li>
+  <li><code>pip install PyCryptodome</code></li>
+  <li><code>pip install gradio</code></li>
+</ol>
+
+# To run/end
+Run the following code in the command prompt at the file location
+
+<code>python app.py</code>
+
+To end the server <br>
+Press <code>Control + C</code>
