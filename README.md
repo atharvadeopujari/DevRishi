@@ -23,6 +23,7 @@ Domain Bucket	: MedTech / BioTech / HealthTech
 3) Vansh Bhavsar <br>
 4) Vipin Mishra <br>
 5) Akshaya Mudragada<br>
+6) Kushagra Srivastav
 
 # Installation
 Run the following commands in command prompt to install the required python libraries
