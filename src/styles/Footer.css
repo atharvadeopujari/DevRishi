@@ -1,0 +1,19 @@
+/* Footer.css */
+
+.footer {
+  width: 100%;
+  height: 190px;
+  background-color: #121619;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.footer p {
+  color: white;
+  text-align: center; /* Add this to center-align text within the footer */
+}
+
+/* You can add more styles here if needed */
