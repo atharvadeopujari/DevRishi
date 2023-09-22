@@ -1,9 +1,21 @@
 import React, { useEffect } from "react";
-import Log from "../assets/nathan-dumlao-zp72-rffT9g-unsplash.jpg";
+import { useNavigate } from "react-router-dom";
+import Log from "../assets/image9.jpg";
+import Image1 from "../assets/image1.jpg";
+import Image2 from "../assets/image2.jpg";
+import Image3 from "../assets/image3.jpg";
+import Image4 from "../assets/image4.jpg";
+import Image5 from "../assets/image5.jpg";
+import Image6 from "../assets/image6.jpg";
+import Image7 from "../assets/image7.jpg";
+import Image8 from "../assets/image8.jpg";
 import "../styles/Home.css";
 
 function Home() {
+  const navigate = useNavigate();
+
   useEffect(() => {
+    // Your Botpress script initialization code
     const script1 = document.createElement("script");
     script1.src = "https://cdn.botpress.cloud/webchat/v1/inject.js";
     script1.async = true;
@@ -17,7 +29,7 @@ function Home() {
 
       script2.onload = () => {
         window.botpressWebChat.init({
-          botId: 'https://mediafiles.botpress.cloud/36e9b442-5a47-4228-8824-c2d289545bdb/webchat/config.js', // Replace with your Bot ID
+          botId: 'YOUR_BOT_ID', // Replace with your Bot ID
           clientId: 'YOUR_CLIENT_ID', // Replace with your Client ID
           hostUrl: 'https://cdn.botpress.cloud/webchat/v0',
           messagingUrl: 'https://messaging.botpress.cloud',
@@ -36,32 +48,78 @@ function Home() {
   }, []);
 
   const divContents = [
-    "Kaya Chikitsa",
-    "Balachikitsa",
-    "Graha Chikitsa",
-    "Shalya Chikitsa",
-    "Urdhvanga Chikitsa",
-    "Urdhvanga Chikitsa",
-    "Rasayana and Vajikarana",
-    "Jara Chikitsa",
+    {
+      content: "Kaya Chikitsa",
+      image: Image1,
+    },
+    {
+      content: "SHALYA CHIKITSA:",
+      image: Image2,
+    },
+    {
+      content: "SHALAKYA TANTRA:",
+      image: Image3,
+    },
+    {
+      content: "AGADA TANTRA:",
+      image: Image4,
+    },
+    {
+      content: "Urdhvanga Chikitsa",
+      image: Image5,
+    },
+    {
+      content: "Damshtra",
+      image: Image6,
+    },
+    {
+      content: "Rasayana and Vajikarana",
+      image: Image7,
+    },
+    {
+      content: "Jara Chikitsa",
+      image: Image8,
+    },
   ];
+
+  const handleLearnMoreClick = (index) => {
+    // Create an array of URLs to which you want to navigate
+    const urls = [
+      "/content1", // Replace with the actual URLs you want to navigate to
+      "/content2",
+      "/content3",
+      "/content4",
+      "/content5",
+      "/content6",
+      "/content7",
+      "/content8",
+    ];
+
+    // Use navigate to go to the corresponding URL based on the index
+    navigate(urls[index]);
+  };
 
   return (
     <div className="HomeImage" style={{ backgroundImage: `url(${Log})` }}>
       <div className="home">
-        <div className="headerContainer">
-          <div className="buttons-container">
-            {divContents.map((content, index) => (
-              <div className="button-div" key={index}>
-                <p>{content}</p>
-                <button className="learn-more-button">Learn More</button>
+        <div className="buttons-container">
+          {divContents.map((item, index) => (
+            <div className="button-div" key={index}>
+              <img src={item.image} alt={`Image ${index}`} />
+              <div className="content">
+                <p>{item.content}</p>
+                <button
+                  className="learn-more-button"
+                  onClick={() => handleLearnMoreClick(index)} // Pass the index to the click handler
+                >
+                  Learn More
+                </button>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </div>
 
-      {/* Placeholder for Botpress Web Chat */}
       <div id="botpress-chat-container"></div>
     </div>
   );
