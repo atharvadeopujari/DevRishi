@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Log from "../assets/nathan-dumlao-zp72-rffT9g-unsplash.jpg";
-import ImageSide from "../assets/image4.jpg";
+import ImageSide from "../assets/image8.jpg";
 import "../styles/content1.css";
 
 function Content1() {
@@ -11,11 +11,7 @@ function Content1() {
   return (
     <div className="blog-container">
       <div className="blog-content">
-        <img
-          src={Log}
-          alt="Main Image"
-          className="main-image"
-        />
+       
         <h1>VAJIKARANA TANTRA</h1>
         <p>
           In Ayurveda, "Vajikarana" refers to a branch of therapy or treatment

@@ -65,19 +65,19 @@ function Home() {
       image: Image4,
     },
     {
-      content: "Urdhvanga Chikitsa",
+      content: "BHUTA VIDYA",
       image: Image5,
     },
     {
-      content: "Damshtra",
+      content: "Kaumarabhritya",
       image: Image6,
     },
     {
-      content: "Rasayana and Vajikarana",
+      content: "RASAYANA TANTRA",
       image: Image7,
     },
     {
-      content: "Jara Chikitsa",
+      content: "VAJIKARANA TANTRA",
       image: Image8,
     },
   ];

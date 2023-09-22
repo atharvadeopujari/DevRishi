@@ -181,3 +181,24 @@ body {
     transform: translateY(0);
   }
 }
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Style for the <h2> element in the navbar */
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Style for the <h2> element in the navbar */
+.navbar-h2 {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #195998; /* Adjust the text color as needed */
+  font-weight: bold; /* Add font-weight if desired */
+  margin: 0 10px; /* Adjust the margin as needed */
+  /* Add any other styling you want for the navbar <h2> element */
+  transition: transform 0.2s, color 0.2s; /* Add a smooth transition effect */
+}
+
+/* Hover effect for the <h2> element */
+.navbar-h2:hover {
+  color: #ffffff; /* Change text color on hover */
+  transform: scale(1.05); /* Add a slight scale-up effect on hover */
+}
+

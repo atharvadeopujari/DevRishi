@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Log from "../assets/nathan-dumlao-zp72-rffT9g-unsplash.jpg";
-import ImageSide from "../assets/image4.jpg";
+import ImageSide from "../assets/image5.jpg";
 import "../styles/content1.css";
 
 function Content1() {

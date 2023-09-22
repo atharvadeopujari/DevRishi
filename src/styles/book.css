@@ -1,98 +1,171 @@
-/* General styling for the entire 'About' section */
+/* book.css */
+
+/* Styles for the main container */
 .about {
-  width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  position: relative;
-  background-color: #f7f7f7; /* Light background color */
-  overflow: hidden; /* Hide overflowing content */
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 1vh; /* Adjust to your needs */
 }
 
-/* Styling for the top section with background image */
+/* Styles for the top section with background image */
 .aboutTop {
   width: 100%;
-  height: 45vh; /* Adjusted height for better responsiveness */
-  background-image: url('../assets/img1.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 200px; /* Adjust the height as needed */
   background-size: cover;
-  position: relative;
-  z-index: 0;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-/* Styling for the banner */
-.banner {
-  background-image: url('../assets/img1.jpeg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 250px; /* Adjust the height as needed */
-}
-
-/* Styling for the bottom section */
+/* Styles for the bottom section with articles */
 .aboutBottom {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 20px; /* Add padding for better spacing */
-  position: relative;
-  z-index: 1;
-  background-color: #ffffff; /* White background color */
-  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
-}
-
-/* Styling for the 'ARTICLES' heading */
-.aboutBottom h1 {
-  font-weight: 600; /* Increased font weight */
-  font-size: 3rem; /* Responsive font size */
-  color: #333; /* Dark text color */
-  text-align: center; /* Center-align headings */
-  margin-top: 20px; /* Spacing from the top */
-}
-
-/* Styling for the menu items */
-.menuItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background */
   padding: 20px;
-  border: 1px solid #ddd; /* Add a border for separation */
-  border-radius: 5px; /* Add rounded corners */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-  margin: 20px 0; /* Add margin between menu items */
+  border-radius: 10px;
+  text-align: center;
 }
 
-/* Styling for the image container */
-.menuItem > div {
-  width: 100%;
-  height: 200px; /* Set the desired height for the image container */
-  background-size: cover;
-  background-position: center;
+/* Styles for the heading */
+.aboutBottom h1 {
+  font-size: 36px; /* Adjust the font size as needed */
+  margin-bottom: 20px;
+}
+
+/* Styles for the menu container */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styles for individual menu items */
+.menuList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust to your needs */
+}
+
+/* Styles for the MenuItem component (assuming it's a card-like element) */
+.menuItem {
+  width: 250px; /* Adjust the width as needed */
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Styles for the image inside the MenuItem */
+.menuItem img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
   margin-bottom: 10px;
 }
 
-/* Styling for the button-like link */
-.menuItem a.button-link {
-  display: inline-flex;
-  padding: 10px 20px;
-  background-color: #007bff;
+/* Styles for the article name */
+.menuItem .name {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Styles for the author name */
+.menuItem .author {
+  font-size: 14px; /* Adjust the font size as needed */
+  color: #777;
+}
+
+/* Add hover effect for menu items */
+.menuItem:hover {
+  transform: scale(1.05); /* Add a slight scale-up effect on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Add a subtle shadow on hover */
+  cursor: pointer;
+}
+/* book.css */
+
+.about {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #06088d;
+}
+
+.aboutBottom {
+  text-align: center;
+}
+
+.aboutBottom h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.menuItem {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menuItem div {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.menuItem h1 {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.menuItem h3 {
+  font-size: 16px;
+  margin: 0 10px 10px;
+  color: #777;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.button-link {
+  background-color: #007BFF;
   color: #fff;
-  text-decoration: none;
+  padding: 8px 16px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  transition: background-color 0.2s;
 }
 
-/* Hover effect for the button-like link */
-.menuItem a.button-link:hover {
+.button-link:hover {
   background-color: #0056b3;
-}
-.menuItem .button-container {
-  margin-top: auto; /* Push the button to the bottom */
 }

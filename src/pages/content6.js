@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Log from "../assets/nathan-dumlao-zp72-rffT9g-unsplash.jpg";
-import ImageSide from "../assets/image4.jpg"; // Import your side image
+import ImageSide from "../assets/image6.jpg"; // Import your side image
 import "../styles/content1.css"; // Create a new CSS file for styling
 
 function Content1() {
@@ -11,12 +11,12 @@ function Content1() {
   return (
     <div className="blog-container">
       <div className="blog-content">
-        <h1>RASAYANA TANTRA:</h1>
+        <h1>Kaumarabhritya:</h1>
         <p>
           Kaumarabhritiya is a part of ayurveda which mainly deals with the healthcare and treatment of children, including infants, toddlers, and adolescents. It focuses on the health and well-being of children, providing guidance on their diet, lifestyle, and specific treatments for various childhood alignments. It encompasses various aspects of child care, including nutrition, growth monitoring, and remedies for common childhood illnesses.
         </p>
         
-        <h2>RASAYANA TANTRA: Brief</h2>
+        <h2>Kaumarabhritya: Brief</h2>
         
         <p>
           Kaumarabhritya, the branch of Ayurveda that focuses on pediatrics and the healthcare of infants, children, and adolescents, within its broader field, practitioners may have areas of specialization or expertise in specific aspects of pediatric care. Some areas of specialization or topics that may be studied within Kaumarabhritya include:
