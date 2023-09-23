@@ -1,4 +1,5 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 import "./App.css";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
@@ -18,6 +19,11 @@ function App() {
   return (
     <Router> {/* Wrap your entire app with the Router */}
       <div className="App">
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title>DevRishi</title>
+                <link rel="canonical" href="http://mysite.com/example" />
+        </Helmet>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
