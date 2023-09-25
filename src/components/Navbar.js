@@ -20,6 +20,7 @@ function Navbar() {
       </div>
       <div className="rightSide">
         <Link to="/"> Home </Link>
+        <Link to="/login">Login</Link>
         <Link to="/conti"> Contribution </Link>
         <Link to="/book">  E-books/pdf</Link>
         <Link to="/disc"> Discussion forum  </Link>

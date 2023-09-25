@@ -1,6 +1,9 @@
 import React from "react";
 import {Helmet} from "react-helmet";
 import "./App.css";
+ // Import Home from the first code
+ // Import Login from the first code
+ import Login from "./components/login";
 import Footer from "./components/Footer";
 import Home from "./pages/home";
 import Content1 from "./pages/content1";
@@ -35,6 +38,9 @@ function App() {
           <Route path="/content6" element={<Content6 />} />
           <Route path="/content7" element={<Content7 />} />
           <Route path="/content8" element={<Content8 />} />
+       
+          <Route path="/login" element={<Login />} />
+         
           <Route path="/book" element={<Book />} /> 
         </Routes>
       </div>
